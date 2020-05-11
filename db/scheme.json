@@ -1,0 +1,14 @@
+[
+ {
+  "name": "frame1",
+  "slots": [
+   {
+    "name": "slot1",
+    "class": "class1",
+    "type": "type1",
+    "value": "value1"
+   }
+  ],
+  "children": []
+ }
+]
