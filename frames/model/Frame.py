@@ -16,6 +16,9 @@ class Frame:
         self._children = {}
         self._parent = parent
 
+    def __repr__(self):
+        return self.name
+
     @property
     def name(self):
         return self._name
