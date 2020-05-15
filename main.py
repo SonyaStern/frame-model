@@ -1,4 +1,4 @@
-from frames.model.Frame import Frame
+from frames.model.Frame import Frame, frames
 from frames.model.Slot import Slot
 
 
@@ -31,15 +31,16 @@ def main():
                       }
                  ]
              }
-    Frame.create_or_update_frame(data)
+    frame1 = Frame.create_or_update_frame(data)
     # Frame.create_or_update_frame(data2)
-    # Frame.delete(frame1)
+    Frame.delete(frame1)
     # Frame.add_child(data, child_data)
     print(Frame.search(slots, 'strict'))
     print(Frame.search(slots1, 'wide'))
 
-    Frame.save_to_db()
 
+if frames.__len__() > 0:
+    Frame.save_to_db()
 
 if __name__ == '__main__':
     main()
